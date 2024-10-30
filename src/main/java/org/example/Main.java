@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- *
- */
 class KonversiSuhu {
 
     public static final String MENU_PROMPT = "Pilih jenis konversi: ";
@@ -34,16 +31,30 @@ class KonversiSuhu {
         }
     }
 
+    /**
+     * private untuk Menunjukkan bahwa metode ini hanya dapat diakses dari dalam kelas yang sama.
+     * static unyuk Menunjukkan bahwa metode ini dapat dipanggil tanpa membuat instance dari kelas tersebut.
+     * void untuk Menunjukkan bahwa metode ini tidak mengembalikan nilai.
+     * handleInvalidChoice unutk Nama metode yang menggambarkan fungsinya, yaitu menangani pilihan yang tidak valid.
+     */
     private static void handleInvalidChoice() {
         System.out.println("Pilihan tidak valid.");
         return;
     }
 
+    /**
+     *
+     * @return
+     */
     private static Scanner createScanner() {
         Scanner scanner = new Scanner(System.in);
         return scanner;
     }
 
+    /**
+     *
+     * @param scanner
+     */
     private static void konverensiFahrenheitkeCelcius(Scanner scanner) {
         double suhu;
         double hasil;
@@ -54,6 +65,10 @@ class KonversiSuhu {
         return;
     }
 
+    /**
+     *
+     * @param scanner
+     */
     private static void konverensiCelciuskeFahrenheit(Scanner scanner) {
         double suhu;
         double hasil;
